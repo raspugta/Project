@@ -1,0 +1,359 @@
+{
+  "version": "2026.09-draft",
+  "notice": "Curated first-aid and self-care guidance written conservatively from widely published public guidance. It has NOT been reviewed by a clinician; review_status marks this. Replace or have it reviewed before any real deployment.",
+  "entries": [
+    {
+      "id": "kb.emergency_general",
+      "concepts": ["unconscious"],
+      "red_flag": true,
+      "source": "Summarised from public basic-life-support guidance (e.g. Resuscitation Council UK, American Heart Association).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Unresponsive person", "hi": "बेहोश व्यक्ति", "hi-Latn": "Behosh vyakti", "es": "Persona que no responde", "fr": "Personne qui ne réagit pas", "de": "Person reagiert nicht"},
+      "text": {
+        "en": "If someone is unresponsive or not breathing normally, call your emergency number immediately. If you are trained, start CPR and follow the dispatcher's instructions.",
+        "hi": "अगर कोई व्यक्ति जवाब नहीं दे रहा या सामान्य रूप से सांस नहीं ले रहा, तो तुरंत अपने आपातकालीन नंबर पर कॉल करें। अगर आप प्रशिक्षित हैं, तो सीपीआर शुरू करें और कॉल पर मिलने वाले निर्देशों का पालन करें।",
+        "hi-Latn": "Agar koi vyakti jawab nahi de raha ya normal tarah se saans nahi le raha, to turant apne emergency number par call kijiye. Agar aap trained hain, to CPR shuru kijiye aur call par milne wale instructions follow kijiye.",
+        "es": "Si alguien no responde o no respira con normalidad, llama inmediatamente a tu número de emergencias. Si tienes formación, inicia la RCP y sigue las instrucciones del operador.",
+        "fr": "Si une personne ne réagit pas ou ne respire pas normalement, appelez immédiatement votre numéro d'urgence. Si vous êtes formé, commencez la RCP et suivez les instructions de l'opérateur.",
+        "de": "Wenn jemand nicht reagiert oder nicht normal atmet, ruf sofort deine Notrufnummer an. Wenn du geschult bist, beginne mit der Herz-Lungen-Wiederbelebung und folge den Anweisungen der Leitstelle."
+      }
+    },
+    {
+      "id": "kb.chest_pain",
+      "concepts": ["chest_pain"],
+      "red_flag": true,
+      "source": "Summarised from public heart-attack warning-sign guidance (e.g. NHS 'Heart attack', American Heart Association).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Chest pain", "hi": "सीने में दर्द", "hi-Latn": "Seene mein dard", "es": "Dolor en el pecho", "fr": "Douleur thoracique", "de": "Brustschmerzen"},
+      "text": {
+        "en": "Chest pain or pressure, especially if it spreads to the arm, jaw, neck or back, or comes with shortness of breath, sweating or nausea, can be a sign of a heart attack. Call your emergency number now. Do not drive yourself. Sit down and rest while you wait.",
+        "hi": "सीने में दर्द या दबाव, खासकर अगर वह बांह, जबड़े, गर्दन या पीठ तक फैले, या सांस फूलने, पसीने या मतली के साथ हो, तो यह दिल के दौरे का संकेत हो सकता है। अभी अपने आपातकालीन नंबर पर कॉल करें। खुद गाड़ी न चलाएं। इंतज़ार करते समय बैठकर आराम करें।",
+        "hi-Latn": "Seene mein dard ya dabav, khaaskar agar woh baah, jabde, gardan ya peeth tak faile, ya saans phoolne, paseene ya matli ke saath ho, to yeh dil ke daure ka sanket ho sakta hai. Abhi apne emergency number par call kijiye. Khud gaadi mat chalaiye. Intezaar karte samay baith kar aaram kijiye.",
+        "es": "El dolor o la presión en el pecho, sobre todo si se extiende al brazo, la mandíbula, el cuello o la espalda, o viene con falta de aire, sudor o náuseas, puede ser un signo de infarto. Llama ahora a tu número de emergencias. No conduzcas. Siéntate y descansa mientras esperas.",
+        "fr": "Une douleur ou une pression dans la poitrine, surtout si elle s'étend au bras, à la mâchoire, au cou ou au dos, ou s'accompagne d'essoufflement, de sueurs ou de nausées, peut être un signe de crise cardiaque. Appelez maintenant votre numéro d'urgence. Ne conduisez pas vous-même. Asseyez-vous et restez au repos en attendant.",
+        "de": "Schmerzen oder Druck in der Brust, besonders wenn sie in Arm, Kiefer, Hals oder Rücken ausstrahlen oder mit Atemnot, Schwitzen oder Übelkeit einhergehen, können ein Zeichen für einen Herzinfarkt sein. Ruf jetzt deine Notrufnummer an. Fahr nicht selbst. Setz dich hin und ruh dich aus, während du wartest."
+      }
+    },
+    {
+      "id": "kb.stroke",
+      "concepts": ["stroke_signs", "numbness", "confusion"],
+      "red_flag": true,
+      "source": "Summarised from the public FAST stroke campaign (e.g. NHS, American Stroke Association).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Stroke warning signs", "hi": "स्ट्रोक के चेतावनी संकेत", "hi-Latn": "Stroke ke warning sanket", "es": "Señales de ictus", "fr": "Signes d'AVC", "de": "Warnzeichen eines Schlaganfalls"},
+      "text": {
+        "en": "Warning signs of a stroke include a drooping face, weakness in one arm, and slurred or strange speech. Other sudden signs can include numbness on one side, confusion, or trouble seeing or walking. Call your emergency number immediately and note the time the symptoms started.",
+        "hi": "स्ट्रोक के चेतावनी संकेतों में चेहरे का एक तरफ लटकना, एक बांह में कमज़ोरी, और बोली का लड़खड़ाना या अजीब होना शामिल है। अचानक एक तरफ सुन्नपन, भ्रम, या देखने या चलने में दिक्कत भी हो सकती है। तुरंत अपने आपातकालीन नंबर पर कॉल करें और लक्षण शुरू होने का समय नोट करें।",
+        "hi-Latn": "Stroke ke warning sanketon mein chehre ka ek taraf latakna, ek baah mein kamzori, aur boli ka ladkhadana ya ajeeb hona shaamil hai. Achanak ek taraf sunnpan, confusion, ya dekhne ya chalne mein dikkat bhi ho sakti hai. Turant apne emergency number par call kijiye aur lakshan shuru hone ka samay note kijiye.",
+        "es": "Las señales de alarma de un ictus incluyen la cara caída, debilidad en un brazo y el habla arrastrada o extraña. Otros signos repentinos pueden ser adormecimiento de un lado, confusión o dificultad para ver o caminar. Llama de inmediato a tu número de emergencias y anota la hora en que empezaron los síntomas.",
+        "fr": "Les signes d'alerte d'un AVC comprennent un visage qui s'affaisse, une faiblesse d'un bras et une parole difficile ou étrange. D'autres signes soudains peuvent être un engourdissement d'un côté, une confusion ou des troubles de la vue ou de la marche. Appelez immédiatement votre numéro d'urgence et notez l'heure du début des symptômes.",
+        "de": "Warnzeichen eines Schlaganfalls sind ein herabhängendes Gesicht, Schwäche in einem Arm und verwaschene oder seltsame Sprache. Weitere plötzliche Zeichen können Taubheit auf einer Seite, Verwirrtheit oder Probleme beim Sehen oder Gehen sein. Ruf sofort deine Notrufnummer an und notiere die Uhrzeit, zu der die Symptome begonnen haben."
+      }
+    },
+    {
+      "id": "kb.breathing",
+      "concepts": ["breathing_difficulty"],
+      "red_flag": true,
+      "source": "Summarised from public first-aid guidance on breathing difficulty (e.g. NHS 'Shortness of breath', Red Cross first aid).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Difficulty breathing", "hi": "सांस लेने में तकलीफ", "hi-Latn": "Saans lene mein takleef", "es": "Dificultad para respirar", "fr": "Difficulté à respirer", "de": "Atemnot"},
+      "text": {
+        "en": "Severe difficulty breathing is an emergency: call your emergency number. Sit upright and loosen tight clothing. If you have a prescribed reliever inhaler, use it as your doctor instructed.",
+        "hi": "सांस लेने में गंभीर तकलीफ एक आपात स्थिति है: अपने आपातकालीन नंबर पर कॉल करें। सीधे बैठें और तंग कपड़े ढीले करें। अगर आपके पास डॉक्टर का बताया हुआ इनहेलर है, तो उसे डॉक्टर के निर्देशानुसार इस्तेमाल करें।",
+        "hi-Latn": "Saans lene mein gambhir takleef ek emergency hai: apne emergency number par call kijiye. Seedhe baithiye aur tang kapde dheele kijiye. Agar aapke paas doctor ka bataya hua inhaler hai, to use doctor ke instructions ke hisaab se istemaal kijiye.",
+        "es": "La dificultad grave para respirar es una emergencia: llama a tu número de emergencias. Siéntate erguido y afloja la ropa ajustada. Si tienes un inhalador de rescate recetado, úsalo como te indicó tu médico.",
+        "fr": "Une difficulté respiratoire importante est une urgence : appelez votre numéro d'urgence. Asseyez-vous bien droit et desserrez les vêtements serrés. Si vous avez un inhalateur de secours prescrit, utilisez-le comme votre médecin vous l'a indiqué.",
+        "de": "Starke Atemnot ist ein Notfall: Ruf deine Notrufnummer an. Setz dich aufrecht hin und lockere enge Kleidung. Wenn du ein verschriebenes Notfall-Inhalationsspray hast, benutze es so, wie es dein Arzt dir erklärt hat."
+      }
+    },
+    {
+      "id": "kb.severe_bleeding",
+      "concepts": ["severe_bleeding"],
+      "red_flag": true,
+      "source": "Summarised from public first-aid guidance on severe bleeding (e.g. Red Cross, 'Stop the Bleed').",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Heavy bleeding", "hi": "बहुत खून बहना", "hi-Latn": "Bahut khoon behna", "es": "Sangrado abundante", "fr": "Saignement abondant", "de": "Starke Blutung"},
+      "text": {
+        "en": "Press firmly on the wound with a clean cloth or dressing and keep pressing. If the bleeding is heavy or does not stop, call your emergency number.",
+        "hi": "साफ कपड़े या पट्टी से घाव पर मज़बूती से दबाएं और दबाते रहें। अगर खून बहुत बह रहा है या रुक नहीं रहा, तो अपने आपातकालीन नंबर पर कॉल करें।",
+        "hi-Latn": "Saaf kapde ya patti se ghaav par mazbooti se dabaiye aur dabate rahiye. Agar khoon bahut beh raha hai ya ruk nahi raha, to apne emergency number par call kijiye.",
+        "es": "Presiona con firmeza la herida con un paño limpio o un apósito y mantén la presión. Si el sangrado es abundante o no se detiene, llama a tu número de emergencias.",
+        "fr": "Appuyez fermement sur la plaie avec un linge propre ou un pansement et maintenez la pression. Si le saignement est abondant ou ne s'arrête pas, appelez votre numéro d'urgence.",
+        "de": "Drück mit einem sauberen Tuch oder Verband fest auf die Wunde und halte den Druck. Wenn die Blutung stark ist oder nicht aufhört, ruf deine Notrufnummer an."
+      }
+    },
+    {
+      "id": "kb.minor_cut",
+      "concepts": ["cut", "bleeding"],
+      "red_flag": false,
+      "source": "Summarised from public first-aid guidance on cuts and grazes (e.g. NHS 'Cuts and grazes').",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Small cuts", "hi": "छोटे कट", "hi-Latn": "Chhote cut", "es": "Cortes pequeños", "fr": "Petites coupures", "de": "Kleine Schnittwunden"},
+      "text": {
+        "en": "For a small cut, wash your hands, rinse the wound with clean water, press gently until the bleeding stops, and cover it with a clean dressing. Get medical help if it is deep or gaping, won't stop bleeding, or looks infected.",
+        "hi": "छोटे कट के लिए, हाथ धोएं, घाव को साफ पानी से धोएं, खून रुकने तक हल्का दबाएं, और उसे साफ पट्टी से ढकें। अगर घाव गहरा या खुला है, खून नहीं रुक रहा, या संक्रमण जैसा दिखे, तो चिकित्सा सहायता लें।",
+        "hi-Latn": "Chhote cut ke liye, haath dhoiye, ghaav ko saaf paani se dhoiye, khoon rukne tak halka dabaiye, aur use saaf patti se dhakiye. Agar ghaav gehra ya khula hai, khoon nahi ruk raha, ya infection jaisa dikhe, to medical madad lijiye.",
+        "es": "Para un corte pequeño, lávate las manos, enjuaga la herida con agua limpia, presiona suavemente hasta que deje de sangrar y cúbrela con un apósito limpio. Busca atención médica si es profundo o abierto, no deja de sangrar o parece infectado.",
+        "fr": "Pour une petite coupure, lavez-vous les mains, rincez la plaie à l'eau propre, appuyez doucement jusqu'à l'arrêt du saignement et couvrez-la d'un pansement propre. Consultez si elle est profonde ou béante, si elle ne cesse pas de saigner ou si elle semble infectée.",
+        "de": "Bei einer kleinen Schnittwunde wasch dir die Hände, spül die Wunde mit sauberem Wasser, drück sanft darauf, bis die Blutung aufhört, und deck sie mit einem sauberen Verband ab. Hol ärztliche Hilfe, wenn sie tief oder klaffend ist, nicht aufhört zu bluten oder entzündet aussieht."
+      }
+    },
+    {
+      "id": "kb.seizure",
+      "concepts": ["seizure"],
+      "red_flag": true,
+      "source": "Summarised from public seizure first-aid guidance (e.g. Epilepsy Foundation, Epilepsy Action).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Seizure first aid", "hi": "दौरे में प्राथमिक उपचार", "hi-Latn": "Daure mein first aid", "es": "Primeros auxilios en convulsiones", "fr": "Premiers secours en cas de convulsions", "de": "Erste Hilfe bei Krampfanfall"},
+      "text": {
+        "en": "During a seizure, do not hold the person down or put anything in their mouth. Move dangerous objects away and cushion their head. When the jerking stops, turn them onto their side. Call your emergency number if the seizure lasts more than 5 minutes, it is their first seizure, or they are injured.",
+        "hi": "दौरे के दौरान व्यक्ति को ज़बरदस्ती न पकड़ें और उसके मुंह में कुछ न डालें। खतरनाक चीज़ें दूर हटाएं और सिर के नीचे कुछ नरम रखें। झटके रुकने पर उसे करवट दिलाएं। अगर दौरा 5 मिनट से ज़्यादा चले, यह पहला दौरा हो, या व्यक्ति को चोट लगी हो, तो आपातकालीन नंबर पर कॉल करें।",
+        "hi-Latn": "Daure ke dauraan vyakti ko zabardasti mat pakdiye aur uske munh mein kuch mat daaliye. Khatarnaak cheezein door hataiye aur sir ke neeche kuch naram rakhiye. Jhatke rukne par use karvat dilaiye. Agar daura 5 minute se zyada chale, yeh pehla daura ho, ya vyakti ko chot lagi ho, to emergency number par call kijiye.",
+        "es": "Durante una convulsión, no sujetes a la persona ni le pongas nada en la boca. Aparta los objetos peligrosos y protégele la cabeza. Cuando cesen las sacudidas, colócala de lado. Llama a tu número de emergencias si la convulsión dura más de 5 minutos, es la primera o la persona se ha lesionado.",
+        "fr": "Pendant une crise, ne maintenez pas la personne et ne mettez rien dans sa bouche. Éloignez les objets dangereux et protégez sa tête. Quand les secousses s'arrêtent, mettez-la sur le côté. Appelez votre numéro d'urgence si la crise dure plus de 5 minutes, si c'est la première ou si la personne est blessée.",
+        "de": "Halte die Person während eines Anfalls nicht fest und steck ihr nichts in den Mund. Räum gefährliche Gegenstände weg und polstere ihren Kopf. Wenn das Zucken aufhört, dreh sie auf die Seite. Ruf deine Notrufnummer an, wenn der Anfall länger als 5 Minuten dauert, es der erste Anfall ist oder die Person verletzt ist."
+      }
+    },
+    {
+      "id": "kb.self_harm",
+      "concepts": ["self_harm"],
+      "red_flag": true,
+      "source": "Summarised from public crisis-support guidance (e.g. WHO, national suicide-prevention lines).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Crisis support", "hi": "संकट में सहारा", "hi-Latn": "Sankat mein sahara", "es": "Apoyo en crisis", "fr": "Soutien en cas de crise", "de": "Unterstützung in der Krise"},
+      "text": {
+        "en": "If you are thinking about ending your life or hurting yourself, please reach out right now: call your emergency number or a suicide and crisis helpline, or tell someone you trust. You are not alone, and help is available.",
+        "hi": "अगर आप अपनी जान लेने या खुद को नुकसान पहुंचाने के बारे में सोच रहे हैं, तो कृपया अभी संपर्क करें: अपने आपातकालीन नंबर या किसी आत्महत्या-रोकथाम हेल्पलाइन पर कॉल करें, या किसी भरोसेमंद व्यक्ति को बताएं। आप अकेले नहीं हैं, और मदद उपलब्ध है।",
+        "hi-Latn": "Agar aap apni jaan lene ya khud ko nuksan pahunchane ke baare mein soch rahe hain, to please abhi sampark kijiye: apne emergency number ya kisi suicide-prevention helpline par call kijiye, ya kisi bharosemand vyakti ko bataiye. Aap akele nahi hain, aur madad uplabdh hai.",
+        "es": "Si estás pensando en quitarte la vida o hacerte daño, pide ayuda ahora mismo: llama a tu número de emergencias o a una línea de prevención del suicidio, o cuéntaselo a alguien de confianza. No estás solo y hay ayuda disponible.",
+        "fr": "Si vous pensez à mettre fin à vos jours ou à vous faire du mal, demandez de l'aide maintenant : appelez votre numéro d'urgence ou une ligne de prévention du suicide, ou parlez-en à une personne de confiance. Vous n'êtes pas seul, et de l'aide existe.",
+        "de": "Wenn du daran denkst, dir das Leben zu nehmen oder dich zu verletzen, hol dir bitte jetzt Hilfe: Ruf deine Notrufnummer oder eine Krisen- oder Suizidpräventions-Hotline an, oder sprich mit einem Menschen, dem du vertraust. Du bist nicht allein, und es gibt Hilfe."
+      }
+    },
+    {
+      "id": "kb.anaphylaxis",
+      "concepts": ["anaphylaxis_signs"],
+      "red_flag": true,
+      "source": "Summarised from public anaphylaxis guidance (e.g. NHS 'Anaphylaxis', Anaphylaxis UK).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Severe allergic reaction", "hi": "गंभीर एलर्जी प्रतिक्रिया", "hi-Latn": "Gambhir allergy reaction", "es": "Reacción alérgica grave", "fr": "Réaction allergique grave", "de": "Schwere allergische Reaktion"},
+      "text": {
+        "en": "Swelling of the throat, tongue or lips, difficulty breathing, or feeling faint after contact with an allergen can be anaphylaxis. Use an adrenaline auto-injector if one has been prescribed, and call your emergency number immediately.",
+        "hi": "किसी एलर्जी वाली चीज़ के संपर्क के बाद गले, जीभ या होंठों में सूजन, सांस लेने में तकलीफ, या बेहोशी जैसा लगना एनाफिलेक्सिस हो सकता है। अगर एड्रेनालिन ऑटो-इंजेक्टर लिखा गया है तो उसका इस्तेमाल करें, और तुरंत अपने आपातकालीन नंबर पर कॉल करें।",
+        "hi-Latn": "Kisi allergy wali cheez ke sampark ke baad gale, jeebh ya honthon mein sujan, saans lene mein takleef, ya behoshi jaisa lagna anaphylaxis ho sakta hai. Agar adrenaline auto-injector likha gaya hai to uska istemaal kijiye, aur turant apne emergency number par call kijiye.",
+        "es": "La hinchazón de la garganta, la lengua o los labios, la dificultad para respirar o sentirse desfallecer tras el contacto con un alérgeno puede ser anafilaxia. Usa un autoinyector de adrenalina si te lo han recetado y llama de inmediato a tu número de emergencias.",
+        "fr": "Un gonflement de la gorge, de la langue ou des lèvres, une difficulté à respirer ou un malaise après un contact avec un allergène peuvent être une anaphylaxie. Utilisez un stylo auto-injecteur d'adrénaline s'il vous a été prescrit et appelez immédiatement votre numéro d'urgence.",
+        "de": "Schwellungen an Hals, Zunge oder Lippen, Atemnot oder ein Schwächegefühl nach Kontakt mit einem Allergen können eine Anaphylaxie sein. Benutze einen Adrenalin-Autoinjektor, falls einer verschrieben wurde, und ruf sofort deine Notrufnummer an."
+      }
+    },
+    {
+      "id": "kb.poisoning",
+      "concepts": ["poisoning"],
+      "red_flag": true,
+      "source": "Summarised from public poisoning first-aid guidance (e.g. NHS 'Poisoning', poison control centres).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Poisoning or overdose", "hi": "ज़हर या ओवरडोज़", "hi-Latn": "Zehar ya overdose", "es": "Intoxicación o sobredosis", "fr": "Intoxication ou surdose", "de": "Vergiftung oder Überdosis"},
+      "text": {
+        "en": "If someone may have swallowed poison or taken too much medicine, call your emergency number or poison control right away. Do not try to make them vomit. Keep the packaging to show the responders.",
+        "hi": "अगर किसी ने ज़हर निगल लिया हो या बहुत ज़्यादा दवा ले ली हो, तो तुरंत अपने आपातकालीन नंबर या ज़हर नियंत्रण केंद्र पर कॉल करें। उल्टी करवाने की कोशिश न करें। पैकेट संभालकर रखें ताकि मदद करने वालों को दिखा सकें।",
+        "hi-Latn": "Agar kisi ne zehar nigal liya ho ya bahut zyada dawai le li ho, to turant apne emergency number ya poison control centre par call kijiye. Ulti karwane ki koshish mat kijiye. Packet sambhaal kar rakhiye taaki madad karne walon ko dikha sakein.",
+        "es": "Si alguien puede haber tragado un veneno o tomado demasiada medicación, llama de inmediato a tu número de emergencias o al centro de toxicología. No intentes provocarle el vómito. Guarda el envase para mostrárselo a los servicios de emergencia.",
+        "fr": "Si quelqu'un a pu avaler un poison ou prendre trop de médicaments, appelez tout de suite votre numéro d'urgence ou le centre antipoison. N'essayez pas de le faire vomir. Gardez l'emballage pour le montrer aux secours.",
+        "de": "Wenn jemand möglicherweise Gift geschluckt oder zu viele Medikamente genommen hat, ruf sofort deine Notrufnummer oder den Giftnotruf an. Versuche nicht, Erbrechen auszulösen. Heb die Verpackung auf, um sie den Rettungskräften zu zeigen."
+      }
+    },
+    {
+      "id": "kb.after_fall",
+      "concepts": ["fall"],
+      "red_flag": false,
+      "source": "Summarised from public falls guidance for adults (e.g. NHS 'What to do if you fall', Age UK).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "After a fall", "hi": "गिरने के बाद", "hi-Latn": "Girne ke baad", "es": "Después de una caída", "fr": "Après une chute", "de": "Nach einem Sturz"},
+      "text": {
+        "en": "After a fall, stay still for a moment and check yourself for pain or injury. If you are hurt, hit your head, or cannot get up, stay where you are, keep warm, and call for help. If you feel able to get up, roll onto your side, get onto your hands and knees, and use a sturdy chair to rise slowly.",
+        "hi": "गिरने के बाद, एक पल के लिए स्थिर रहें और देखें कि कहीं दर्द या चोट तो नहीं है। अगर चोट लगी है, सिर टकराया है, या आप उठ नहीं पा रहे, तो वहीं रहें, खुद को गर्म रखें, और मदद बुलाएं। अगर आपको लगे कि आप उठ सकते हैं, तो करवट लें, हाथों और घुटनों के बल आएं, और किसी मज़बूत कुर्सी के सहारे धीरे-धीरे उठें।",
+        "hi-Latn": "Girne ke baad, ek pal ke liye sthir rahiye aur dekhiye ki kahin dard ya chot to nahi hai. Agar chot lagi hai, sir takraya hai, ya aap uth nahi pa rahe, to wahin rahiye, khud ko garam rakhiye, aur madad bulaiye. Agar aapko lage ki aap uth sakte hain, to karvat lijiye, haathon aur ghutnon ke bal aaiye, aur kisi mazboot kursi ke sahare dheere-dheere uthiye.",
+        "es": "Después de una caída, quédate quieto un momento y comprueba si tienes dolor o alguna lesión. Si te has hecho daño, te has golpeado la cabeza o no puedes levantarte, quédate donde estás, abrígate y pide ayuda. Si te sientes capaz de levantarte, gírate de lado, ponte a gatas y apóyate en una silla firme para incorporarte despacio.",
+        "fr": "Après une chute, restez immobile un instant et vérifiez si vous avez mal ou êtes blessé. Si vous êtes blessé, vous êtes cogné la tête ou ne pouvez pas vous relever, restez où vous êtes, gardez-vous au chaud et appelez à l'aide. Si vous vous sentez capable de vous relever, roulez sur le côté, mettez-vous à quatre pattes et appuyez-vous sur une chaise solide pour vous relever lentement.",
+        "de": "Bleib nach einem Sturz einen Moment still liegen und prüfe, ob du Schmerzen oder Verletzungen hast. Wenn du verletzt bist, dir den Kopf gestoßen hast oder nicht aufstehen kannst, bleib, wo du bist, halte dich warm und ruf um Hilfe. Wenn du dich in der Lage fühlst aufzustehen, roll dich auf die Seite, geh in den Vierfüßlerstand und zieh dich langsam an einem stabilen Stuhl hoch."
+      }
+    },
+    {
+      "id": "kb.head_injury",
+      "concepts": ["head_injury"],
+      "red_flag": false,
+      "source": "Summarised from public head-injury guidance (e.g. NHS 'Head injury and concussion').",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Head injury", "hi": "सिर की चोट", "hi-Latn": "Sir ki chot", "es": "Golpe en la cabeza", "fr": "Choc à la tête", "de": "Kopfverletzung"},
+      "text": {
+        "en": "After a head injury, get urgent medical help if there is loss of consciousness, repeated vomiting, a worsening headache, confusion, unusual drowsiness, a seizure, or clear fluid from the nose or ears. People taking blood thinners should get checked even after a minor knock.",
+        "hi": "सिर में चोट लगने के बाद, अगर बेहोशी हुई हो, बार-बार उल्टी हो, सिरदर्द बढ़ रहा हो, भ्रम हो, असामान्य नींद आ रही हो, दौरा पड़े, या नाक या कान से साफ तरल निकले, तो तुरंत चिकित्सा सहायता लें। खून पतला करने वाली दवा लेने वाले लोगों को हल्की चोट के बाद भी जांच करानी चाहिए।",
+        "hi-Latn": "Sir mein chot lagne ke baad, agar behoshi hui ho, baar-baar ulti ho, sir dard badh raha ho, confusion ho, asaamanya neend aa rahi ho, daura pade, ya naak ya kaan se saaf taral nikle, to turant medical madad lijiye. Khoon patla karne wali dawai lene walon ko halki chot ke baad bhi jaanch karani chahiye.",
+        "es": "Tras un golpe en la cabeza, busca atención médica urgente si hay pérdida de conocimiento, vómitos repetidos, un dolor de cabeza que empeora, confusión, somnolencia inusual, una convulsión o salida de líquido claro por la nariz o los oídos. Quienes toman anticoagulantes deben hacerse revisar incluso tras un golpe leve.",
+        "fr": "Après un choc à la tête, consultez en urgence en cas de perte de connaissance, de vomissements répétés, d'un mal de tête qui s'aggrave, de confusion, de somnolence inhabituelle, de convulsions ou d'écoulement de liquide clair par le nez ou les oreilles. Les personnes sous anticoagulants doivent se faire examiner même après un choc léger.",
+        "de": "Hol nach einer Kopfverletzung dringend ärztliche Hilfe bei Bewusstlosigkeit, wiederholtem Erbrechen, stärker werdenden Kopfschmerzen, Verwirrtheit, ungewöhnlicher Schläfrigkeit, einem Krampfanfall oder klarer Flüssigkeit aus Nase oder Ohren. Wer Blutverdünner nimmt, sollte sich auch nach einem leichten Stoß untersuchen lassen."
+      }
+    },
+    {
+      "id": "kb.burn",
+      "concepts": ["burn"],
+      "red_flag": false,
+      "source": "Summarised from public burn first-aid guidance (e.g. NHS 'Burns and scalds', British Red Cross).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Burns", "hi": "जलना", "hi-Latn": "Jalna", "es": "Quemaduras", "fr": "Brûlures", "de": "Verbrennungen"},
+      "text": {
+        "en": "Cool the burn under cool or lukewarm running water for 20 minutes. Remove jewellery or clothing near the burn unless it is stuck to the skin. Cover it loosely with cling film or a clean, non-fluffy dressing. Do not use ice, butter or creams. Get medical help for large or deep burns, or burns on the face, hands or genitals.",
+        "hi": "जले हुए हिस्से को 20 मिनट तक ठंडे या गुनगुने बहते पानी के नीचे रखें। जले हिस्से के पास के गहने या कपड़े हटा दें, जब तक वे त्वचा से चिपके न हों। उसे क्लिंग फिल्म या साफ, बिना रोएं वाली पट्टी से ढीला ढकें। बर्फ, मक्खन या क्रीम न लगाएं। बड़े या गहरे जलने पर, या चेहरे, हाथों या जननांगों के जलने पर चिकित्सा सहायता लें।",
+        "hi-Latn": "Jale hue hisse ko 20 minute tak thande ya gungune behte paani ke neeche rakhiye. Jale hisse ke paas ke gehne ya kapde hata dijiye, jab tak woh twacha se chipke na hon. Use cling film ya saaf, bina roye wali patti se dheela dhakiye. Barf, makkhan ya cream mat lagaiye. Bade ya gehre jalne par, ya chehre, haathon ya jananangon ke jalne par medical madad lijiye.",
+        "es": "Enfría la quemadura bajo agua corriente fresca o tibia durante 20 minutos. Quita joyas o ropa cercanas a la quemadura, salvo que estén pegadas a la piel. Cúbrela sin apretar con film transparente o un apósito limpio que no suelte pelusa. No uses hielo, mantequilla ni cremas. Busca atención médica para quemaduras extensas o profundas, o en la cara, las manos o los genitales.",
+        "fr": "Refroidissez la brûlure sous l'eau courante fraîche ou tiède pendant 20 minutes. Retirez les bijoux ou vêtements proches de la brûlure, sauf s'ils collent à la peau. Couvrez-la sans serrer avec du film alimentaire ou un pansement propre non pelucheux. N'utilisez ni glace, ni beurre, ni crème. Consultez pour une brûlure étendue ou profonde, ou située sur le visage, les mains ou les organes génitaux.",
+        "de": "Kühl die Verbrennung 20 Minuten lang unter kühlem oder lauwarmem fließendem Wasser. Entferne Schmuck oder Kleidung in der Nähe, außer sie kleben an der Haut. Deck sie locker mit Frischhaltefolie oder einem sauberen, nicht fusselnden Verband ab. Verwende kein Eis, keine Butter und keine Cremes. Hol ärztliche Hilfe bei großen oder tiefen Verbrennungen oder bei Verbrennungen an Gesicht, Händen oder Genitalien."
+      }
+    },
+    {
+      "id": "kb.sprain",
+      "concepts": ["sprain", "swelling"],
+      "red_flag": false,
+      "source": "Summarised from public sprains-and-strains guidance (e.g. NHS 'Sprains and strains').",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Sprains and strains", "hi": "मोच", "hi-Latn": "Moch", "es": "Esguinces", "fr": "Entorses", "de": "Verstauchungen"},
+      "text": {
+        "en": "For a minor sprain or strain, rest it, apply a cold pack wrapped in a cloth for up to 20 minutes every 2 to 3 hours in the first days, and keep it raised. Get medical help if you cannot put weight on it, it looks deformed, it feels numb, or the pain is severe.",
+        "hi": "हल्की मोच में, उस हिस्से को आराम दें, शुरुआती दिनों में हर 2 से 3 घंटे में 20 मिनट तक कपड़े में लपेटा ठंडा पैक लगाएं, और उसे ऊंचा रखें। अगर आप उस पर वज़न नहीं डाल पा रहे, वह टेढ़ा दिखे, सुन्न लगे, या दर्द बहुत ज़्यादा हो, तो चिकित्सा सहायता लें।",
+        "hi-Latn": "Halki moch mein, us hisse ko aaram dijiye, shuruaati dinon mein har 2 se 3 ghante mein 20 minute tak kapde mein lipta thanda pack lagaiye, aur use ooncha rakhiye. Agar aap us par wazan nahi daal pa rahe, woh tedha dikhe, sunn lage, ya dard bahut zyada ho, to medical madad lijiye.",
+        "es": "Para un esguince o distensión leve, deja la zona en reposo, aplica una bolsa de frío envuelta en un paño hasta 20 minutos cada 2 a 3 horas durante los primeros días y mantenla elevada. Busca atención médica si no puedes apoyar peso, parece deformada, está entumecida o el dolor es intenso.",
+        "fr": "Pour une entorse ou une élongation légère, mettez la zone au repos, appliquez une poche de froid enveloppée dans un linge jusqu'à 20 minutes toutes les 2 à 3 heures les premiers jours, et surélevez-la. Consultez si vous ne pouvez pas vous appuyer dessus, si elle paraît déformée, engourdie, ou si la douleur est intense.",
+        "de": "Bei einer leichten Verstauchung oder Zerrung schone die Stelle, leg in den ersten Tagen alle 2 bis 3 Stunden bis zu 20 Minuten lang ein in ein Tuch gewickeltes Kühlpack auf und lagere sie hoch. Hol ärztliche Hilfe, wenn du sie nicht belasten kannst, sie verformt aussieht, sich taub anfühlt oder die Schmerzen stark sind."
+      }
+    },
+    {
+      "id": "kb.headache",
+      "concepts": ["headache"],
+      "red_flag": false,
+      "source": "Summarised from public headache guidance (e.g. NHS 'Headaches').",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Headache", "hi": "सिरदर्द", "hi-Latn": "Sir dard", "es": "Dolor de cabeza", "fr": "Mal de tête", "de": "Kopfschmerzen"},
+      "text": {
+        "en": "Rest, drink fluids and take a break from screens. Get urgent help for a sudden, very severe headache, or a headache with a stiff neck, fever, confusion, weakness, vision problems, or after a head injury.",
+        "hi": "आराम करें, पानी पिएं और स्क्रीन से ब्रेक लें। अचानक बहुत तेज़ सिरदर्द हो, या सिरदर्द के साथ गर्दन में अकड़न, बुखार, भ्रम, कमज़ोरी, देखने में दिक्कत हो, या सिर में चोट के बाद सिरदर्द हो, तो तुरंत मदद लें।",
+        "hi-Latn": "Aaram kijiye, paani pijiye aur screen se break lijiye. Achanak bahut tez sir dard ho, ya sir dard ke saath gardan mein akdan, bukhar, confusion, kamzori, dekhne mein dikkat ho, ya sir mein chot ke baad sir dard ho, to turant madad lijiye.",
+        "es": "Descansa, bebe líquidos y tómate un respiro de las pantallas. Busca ayuda urgente ante un dolor de cabeza repentino y muy intenso, o si viene con rigidez de cuello, fiebre, confusión, debilidad, problemas de visión, o tras un golpe en la cabeza.",
+        "fr": "Reposez-vous, buvez et faites une pause loin des écrans. Consultez en urgence pour un mal de tête soudain et très intense, ou accompagné d'une raideur de la nuque, de fièvre, de confusion, de faiblesse, de troubles de la vue, ou survenant après un choc à la tête.",
+        "de": "Ruh dich aus, trink etwas und mach eine Bildschirmpause. Hol dringend Hilfe bei plötzlichen, sehr starken Kopfschmerzen oder bei Kopfschmerzen mit steifem Nacken, Fieber, Verwirrtheit, Schwäche, Sehstörungen oder nach einer Kopfverletzung."
+      }
+    },
+    {
+      "id": "kb.fever",
+      "concepts": ["fever"],
+      "red_flag": false,
+      "source": "Summarised from public fever guidance for adults (e.g. NHS 'High temperature (fever) in adults').",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Fever", "hi": "बुखार", "hi-Latn": "Bukhar", "es": "Fiebre", "fr": "Fièvre", "de": "Fieber"},
+      "text": {
+        "en": "Rest and drink plenty of fluids. Get medical advice if the fever lasts more than a few days or you are worried. Get urgent help if a fever comes with a stiff neck, a rash that does not fade when pressed, confusion, difficulty breathing, or a seizure.",
+        "hi": "आराम करें और खूब तरल पदार्थ पिएं। अगर बुखार कुछ दिनों से ज़्यादा रहे या आपको चिंता हो, तो डॉक्टर की सलाह लें। अगर बुखार के साथ गर्दन में अकड़न, दबाने पर न मिटने वाले दाने, भ्रम, सांस लेने में तकलीफ, या दौरा हो, तो तुरंत मदद लें।",
+        "hi-Latn": "Aaram kijiye aur khoob paani aur taral cheezein pijiye. Agar bukhar kuch dinon se zyada rahe ya aapko chinta ho, to doctor ki salah lijiye. Agar bukhar ke saath gardan mein akdan, dabane par na mitne wale daane, confusion, saans lene mein takleef, ya daura ho, to turant madad lijiye.",
+        "es": "Descansa y bebe mucho líquido. Consulta a un médico si la fiebre dura más de unos días o te preocupa. Busca ayuda urgente si la fiebre viene con rigidez de cuello, una erupción que no desaparece al presionarla, confusión, dificultad para respirar o una convulsión.",
+        "fr": "Reposez-vous et buvez beaucoup. Demandez un avis médical si la fièvre dure plus de quelques jours ou si vous êtes inquiet. Consultez en urgence si la fièvre s'accompagne d'une raideur de la nuque, d'une éruption qui ne s'efface pas à la pression, de confusion, de difficultés respiratoires ou de convulsions.",
+        "de": "Ruh dich aus und trink viel. Hol ärztlichen Rat, wenn das Fieber länger als ein paar Tage anhält oder du dir Sorgen machst. Hol dringend Hilfe, wenn Fieber mit steifem Nacken, einem Ausschlag, der beim Draufdrücken nicht verblasst, Verwirrtheit, Atemnot oder einem Krampfanfall einhergeht."
+      }
+    },
+    {
+      "id": "kb.dizziness",
+      "concepts": ["dizziness"],
+      "red_flag": false,
+      "source": "Summarised from public dizziness guidance (e.g. NHS 'Dizziness').",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Dizziness", "hi": "चक्कर", "hi-Latn": "Chakkar", "es": "Mareo", "fr": "Vertiges", "de": "Schwindel"},
+      "text": {
+        "en": "Sit or lie down straight away to avoid falling, and get up slowly afterwards. Get urgent help if dizziness comes with chest pain, fainting, sudden weakness, trouble speaking, or a severe headache.",
+        "hi": "गिरने से बचने के लिए तुरंत बैठ जाएं या लेट जाएं, और बाद में धीरे-धीरे उठें। अगर चक्कर के साथ सीने में दर्द, बेहोशी, अचानक कमज़ोरी, बोलने में दिक्कत, या तेज़ सिरदर्द हो, तो तुरंत मदद लें।",
+        "hi-Latn": "Girne se bachne ke liye turant baith jaiye ya let jaiye, aur baad mein dheere-dheere uthiye. Agar chakkar ke saath seene mein dard, behoshi, achanak kamzori, bolne mein dikkat, ya tez sir dard ho, to turant madad lijiye.",
+        "es": "Siéntate o túmbate enseguida para evitar caerte y levántate despacio después. Busca ayuda urgente si el mareo viene con dolor en el pecho, desmayo, debilidad repentina, dificultad para hablar o un dolor de cabeza intenso.",
+        "fr": "Asseyez-vous ou allongez-vous tout de suite pour éviter de tomber, puis relevez-vous lentement. Consultez en urgence si les vertiges s'accompagnent de douleur thoracique, d'évanouissement, de faiblesse soudaine, de difficultés à parler ou d'un mal de tête intense.",
+        "de": "Setz oder leg dich sofort hin, um nicht zu stürzen, und steh danach langsam auf. Hol dringend Hilfe, wenn der Schwindel mit Brustschmerzen, Ohnmacht, plötzlicher Schwäche, Sprachproblemen oder starken Kopfschmerzen einhergeht."
+      }
+    },
+    {
+      "id": "kb.stomach_upset",
+      "concepts": ["nausea", "vomiting", "diarrhea"],
+      "red_flag": false,
+      "source": "Summarised from public guidance on diarrhoea and vomiting (e.g. NHS 'Diarrhoea and vomiting').",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Nausea, vomiting or diarrhoea", "hi": "मतली, उल्टी या दस्त", "hi-Latn": "Matli, ulti ya dast", "es": "Náuseas, vómitos o diarrea", "fr": "Nausées, vomissements ou diarrhée", "de": "Übelkeit, Erbrechen oder Durchfall"},
+      "text": {
+        "en": "Take small, frequent sips of water to avoid dehydration. Get medical help if you cannot keep fluids down, there is blood in your vomit or stool, you have severe stomach pain, or signs of dehydration such as passing very little urine.",
+        "hi": "पानी की कमी से बचने के लिए थोड़ा-थोड़ा करके बार-बार पानी पिएं। अगर आप तरल पदार्थ पेट में नहीं रख पा रहे, उल्टी या मल में खून है, पेट में तेज़ दर्द है, या पानी की कमी के लक्षण हैं जैसे बहुत कम पेशाब आना, तो चिकित्सा सहायता लें।",
+        "hi-Latn": "Paani ki kami se bachne ke liye thoda-thoda karke baar-baar paani pijiye. Agar aap taral cheezein pet mein nahi rakh pa rahe, ulti ya mal mein khoon hai, pet mein tez dard hai, ya paani ki kami ke lakshan hain jaise bahut kam peshaab aana, to medical madad lijiye.",
+        "es": "Toma sorbos pequeños y frecuentes de agua para evitar la deshidratación. Busca atención médica si no toleras los líquidos, hay sangre en el vómito o las heces, tienes un dolor de estómago intenso o signos de deshidratación, como orinar muy poco.",
+        "fr": "Buvez de petites gorgées d'eau fréquentes pour éviter la déshydratation. Consultez si vous ne gardez pas les liquides, s'il y a du sang dans les vomissements ou les selles, en cas de douleur abdominale intense ou de signes de déshydratation comme des urines très rares.",
+        "de": "Trink häufig kleine Schlucke Wasser, um nicht auszutrocknen. Hol ärztliche Hilfe, wenn du keine Flüssigkeit bei dir behältst, Blut im Erbrochenen oder Stuhl ist, du starke Bauchschmerzen hast oder Zeichen von Flüssigkeitsmangel wie sehr wenig Urin."
+      }
+    },
+    {
+      "id": "kb.pain_scale",
+      "concepts": ["pain"],
+      "red_flag": false,
+      "source": "Numeric rating scale (NRS) for pain, as commonly used in clinical practice.",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Rating pain", "hi": "दर्द का आकलन", "hi-Latn": "Dard ka aakalan", "es": "Valorar el dolor", "fr": "Évaluer la douleur", "de": "Schmerzen einschätzen"},
+      "text": {
+        "en": "Pain is often rated from 0 (no pain) to 10 (the worst pain imaginable). Tracking it over time helps you and your doctor see changes.",
+        "hi": "दर्द को अक्सर 0 (कोई दर्द नहीं) से 10 (सबसे बुरा दर्द जिसकी कल्पना की जा सके) तक आंका जाता है। समय के साथ इसे दर्ज करने से आपको और आपके डॉक्टर को बदलाव समझने में मदद मिलती है।",
+        "hi-Latn": "Dard ko aksar 0 (koi dard nahi) se 10 (sabse bura dard jiski kalpana ki ja sake) tak aanka jaata hai. Samay ke saath ise record karne se aapko aur aapke doctor ko badlaav samajhne mein madad milti hai.",
+        "es": "El dolor suele valorarse de 0 (sin dolor) a 10 (el peor dolor imaginable). Registrarlo a lo largo del tiempo te ayuda a ti y a tu médico a ver los cambios.",
+        "fr": "La douleur est souvent évaluée de 0 (aucune douleur) à 10 (la pire douleur imaginable). La suivre dans le temps aide votre médecin et vous-même à voir les changements.",
+        "de": "Schmerzen werden oft von 0 (keine Schmerzen) bis 10 (die schlimmsten vorstellbaren Schmerzen) eingeschätzt. Sie über die Zeit festzuhalten hilft dir und deinem Arzt, Veränderungen zu erkennen."
+      }
+    },
+    {
+      "id": "kb.posture",
+      "concepts": ["posture"],
+      "red_flag": false,
+      "source": "Summarised from public workstation ergonomics guidance (e.g. NHS 'How to sit correctly', UK HSE DSE guidance).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Sitting posture", "hi": "बैठने की मुद्रा", "hi-Latn": "Baithne ka posture", "es": "Postura al sentarse", "fr": "Posture assise", "de": "Sitzhaltung"},
+      "text": {
+        "en": "When sitting for long periods, keep your screen at about eye level and your feet flat on the floor, and take short breaks to stand up and move.",
+        "hi": "लंबे समय तक बैठते समय, स्क्रीन को लगभग आंखों के स्तर पर और पैरों को ज़मीन पर सपाट रखें, और बीच-बीच में उठकर चलने के लिए छोटे ब्रेक लें।",
+        "hi-Latn": "Lambe samay tak baithte samay, screen ko lagbhag aankhon ke level par aur pairon ko zameen par seedha rakhiye, aur beech-beech mein uth kar chalne ke liye chhote break lijiye.",
+        "es": "Si pasas mucho tiempo sentado, mantén la pantalla más o menos a la altura de los ojos y los pies apoyados en el suelo, y haz pausas breves para levantarte y moverte.",
+        "fr": "Si vous restez assis longtemps, gardez l'écran à peu près à hauteur des yeux et les pieds à plat sur le sol, et faites de courtes pauses pour vous lever et bouger.",
+        "de": "Wenn du lange sitzt, halte den Bildschirm etwa auf Augenhöhe und die Füße flach auf dem Boden, und mach kurze Pausen, um aufzustehen und dich zu bewegen."
+      }
+    },
+    {
+      "id": "kb.medicines",
+      "concepts": [],
+      "keywords": {"en": "medicine dose dosage pill tablet mg ibuprofen paracetamol", "hi": "दवा खुराक गोली", "hi-Latn": "dawai dose goli tablet", "es": "medicamento dosis pastilla", "fr": "medicament dose comprime", "de": "medikament dosis tablette"},
+      "red_flag": false,
+      "source": "Baymax policy: no dosing advice.",
+      "review_status": "policy",
+      "title": {"en": "Medicines", "hi": "दवाइयां", "hi-Latn": "Dawaiyan", "es": "Medicamentos", "fr": "Médicaments", "de": "Medikamente"},
+      "text": {
+        "en": "Always follow the label or leaflet for a medicine, and ask a pharmacist or doctor before changing how you take it.",
+        "hi": "दवा के लेबल या पर्चे के निर्देशों का हमेशा पालन करें, और दवा लेने का तरीका बदलने से पहले फार्मासिस्ट या डॉक्टर से पूछें।",
+        "hi-Latn": "Dawai ke label ya parche ke instructions ka hamesha paalan kijiye, aur dawai lene ka tareeka badalne se pehle pharmacist ya doctor se poochiye.",
+        "es": "Sigue siempre la etiqueta o el prospecto de un medicamento y consulta a un farmacéutico o médico antes de cambiar la forma de tomarlo.",
+        "fr": "Suivez toujours l'étiquette ou la notice d'un médicament, et demandez à un pharmacien ou à un médecin avant de changer la façon de le prendre.",
+        "de": "Halte dich immer an das Etikett oder den Beipackzettel eines Medikaments und frag eine Apotheke oder einen Arzt, bevor du etwas an der Einnahme änderst."
+      }
+    },
+    {
+      "id": "kb.anxiety",
+      "concepts": ["anxiety"],
+      "red_flag": false,
+      "source": "Summarised from public self-help guidance on anxiety and breathing exercises (e.g. NHS Every Mind Matters).",
+      "review_status": "curated-unreviewed",
+      "title": {"en": "Feeling anxious", "hi": "घबराहट", "hi-Latn": "Ghabrahat", "es": "Ansiedad", "fr": "Anxiété", "de": "Angst"},
+      "text": {
+        "en": "Try slow breathing: breathe in gently through your nose for about 4 seconds and out through your mouth for about 6 seconds, for a few minutes. If anxiety feels overwhelming, keeps coming back, or comes with chest pain, seek medical help.",
+        "hi": "धीमी सांस लेने की कोशिश करें: कुछ मिनट तक, नाक से लगभग 4 सेकंड धीरे से सांस अंदर लें और मुंह से लगभग 6 सेकंड में बाहर छोड़ें। अगर घबराहट बहुत ज़्यादा लगे, बार-बार हो, या सीने में दर्द के साथ हो, तो चिकित्सा सहायता लें।",
+        "hi-Latn": "Dheemi saans lene ki koshish kijiye: kuch minute tak, naak se lagbhag 4 second dheere se saans andar lijiye aur munh se lagbhag 6 second mein bahar chhodiye. Agar ghabrahat bahut zyada lage, baar-baar ho, ya seene mein dard ke saath ho, to medical madad lijiye.",
+        "es": "Prueba a respirar despacio: inspira suavemente por la nariz durante unos 4 segundos y espira por la boca durante unos 6 segundos, durante unos minutos. Si la ansiedad te desborda, se repite o viene con dolor en el pecho, busca ayuda médica.",
+        "fr": "Essayez de respirer lentement : inspirez doucement par le nez pendant environ 4 secondes et expirez par la bouche pendant environ 6 secondes, pendant quelques minutes. Si l'anxiété devient écrasante, revient souvent ou s'accompagne de douleur thoracique, consultez.",
+        "de": "Versuch langsam zu atmen: Atme ein paar Minuten lang etwa 4 Sekunden sanft durch die Nase ein und etwa 6 Sekunden durch den Mund aus. Wenn die Angst überwältigend ist, immer wiederkommt oder mit Brustschmerzen einhergeht, hol dir ärztliche Hilfe."
+      }
+    }
+  ]
+}

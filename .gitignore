@@ -1,6 +1,6 @@
 __pycache__/
 *.pyc
-data/
+/data/
 .pytest_cache/
 web/vendor/
 *.egg-info/
