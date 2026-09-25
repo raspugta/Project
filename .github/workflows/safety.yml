@@ -1,0 +1,19 @@
+name: safety-regression
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: pip install -r requirements.txt pytest
+      - name: Unit, integration and per-case safety regression tests
+        run: python -m pytest -q
+      - name: Evaluation + release gates
+        run: python -m baymax.eval
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: eval-report, path: reports/ }
