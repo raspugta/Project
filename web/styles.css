@@ -52,7 +52,7 @@ code { font-size: 12px; background: var(--soft); padding: 1px 5px; border-radius
 .icon-btn[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); }
 .icon-btn[aria-pressed="true"] svg { fill: #fff; }
 .icon-btn.live { box-shadow: 0 0 0 4px rgba(53,112,201,.18); }
-.pill-btn { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 8px 14px; font-weight: 600; font-size: 13px; text-decoration: none; display: inline-block; }
+.pill-btn { border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 999px; padding: 8px 14px; font-weight: 600; font-size: 13px; text-decoration: none; display: inline-block; }
 .pill-btn:hover { background: var(--soft); }
 .pill-btn.on { background: var(--warn); color: #fff; border-color: var(--warn); }
 .pill-btn.danger { color: var(--crit); border-color: #f1c6c2; }
@@ -196,6 +196,7 @@ main { padding: 22px; max-width: 1500px; margin: 0 auto; }
 .memory-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
 .memory-list li { display: flex; justify-content: space-between; align-items: center; background: var(--soft); border-radius: 12px; padding: 8px 12px; }
 .memory-list small { color: var(--muted); }
+.memory-list li.empty-row { color: var(--muted); font-size: 13px; justify-content: center; }
 .danger-zone { display: flex; gap: 10px; margin-top: 24px; padding-top: 16px; border-top: 1px dashed var(--line); }
 .model-list { display: flex; flex-direction: column; gap: 8px; }
 .model { border: 1px solid var(--line); border-radius: 14px; padding: 10px 14px; }

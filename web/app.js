@@ -400,8 +400,9 @@ async function renderPrivacy() {
   $("#prefLang").value = S.st.profile.preferred_lang;
   $("#requireWake").checked = S.st.profile.require_wake_word;
   $("#llmEnabled").checked = S.st.profile.llm_enabled;
-  $("#llmInfo").textContent = S.st.llm.backend ? `(${S.st.llm.backend}${S.st.llm.cloud ? ", cloud" : ", local"})` : "(none configured)";
+  $("#llmInfo").textContent = S.st.llm.backend ? `(${S.st.llm.backend}${S.st.llm.cloud ? ", cloud" : ", local"})` : `(${t(L, "none_configured")})`;
   const { memories } = await api("/api/memories");
+  if (!memories.length) { $("#memoryList").replaceChildren(el("li", { class: "empty-row" }, t(L, "memories_empty"))); return; }
   $("#memoryList").replaceChildren(...memories.map(m => el("li", {}, el("span", {}, m.value, " ", el("small", {}, `(${m.kind})`)),
     el("button", { class: "why", onclick: async () => { await api(`/api/memories/${m.id}`, { method: "DELETE" }); renderPrivacy(); } }, t(L, "forget")))));
 }

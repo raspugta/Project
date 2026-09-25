@@ -27,7 +27,8 @@ export const UI = {
     preferred_lang: "Language", auto: "Automatic", user_name: "Your name (used in alerts)", require_wake: "Require wake word “Baymax”",
     llm: "Conversational model", onboarding_title: "Welcome to Baymax", onboarding_body: "Baymax runs on this computer. Choose what it may do — you can change this anytime.",
     get_started: "Start", act_absent: "Not in view", act_upright_still: "Upright", act_moving: "Moving", act_lying: "Lying down",
-    events: "events", inactivity: "Inactivity check after (min)", saved: "Saved",
+    events: "events", inactivity: "Inactivity check after (min)", safety_policy: "Safety policy", none_configured: "none configured", memories_empty: "Nothing remembered yet.",
+    saved: "Saved",
   },
   hi: {
     tab_care: "देखभाल", tab_timeline: "टाइमलाइन", tab_privacy: "गोपनीयता", tab_emergency: "आपातकालीन सेटअप", tab_system: "सिस्टम",
@@ -54,7 +55,8 @@ export const UI = {
     preferred_lang: "भाषा", auto: "स्वचालित", user_name: "आपका नाम (अलर्ट में)", require_wake: "जागृति शब्द “बेमैक्स” ज़रूरी",
     llm: "बातचीत मॉडल", onboarding_title: "बेमैक्स में आपका स्वागत है", onboarding_body: "बेमैक्स इसी कंप्यूटर पर चलता है। चुनें कि यह क्या कर सकता है — आप इसे कभी भी बदल सकते हैं।",
     get_started: "शुरू करें", act_absent: "दिखाई नहीं दे रहे", act_upright_still: "सीधे", act_moving: "हिल रहे हैं", act_lying: "लेटे हुए",
-    events: "घटनाएं", inactivity: "निष्क्रियता जांच (मिनट बाद)", saved: "सहेजा गया",
+    events: "घटनाएं", inactivity: "निष्क्रियता जांच (मिनट बाद)", safety_policy: "सुरक्षा नीति", none_configured: "कॉन्फ़िगर नहीं", memories_empty: "अभी कुछ याद नहीं रखा गया।",
+    saved: "सहेजा गया",
   },
   "hi-Latn": {
     tab_care: "Care", tab_timeline: "Timeline", tab_privacy: "Privacy", tab_emergency: "Emergency setup", tab_system: "System",
@@ -81,7 +83,8 @@ export const UI = {
     preferred_lang: "Bhasha", auto: "Automatic", user_name: "Aapka naam (alert mein)", require_wake: "Wake word “Baymax” zaroori",
     llm: "Baatcheet model", onboarding_title: "Baymax mein aapka swagat hai", onboarding_body: "Baymax isi computer par chalta hai. Chuniye ki yeh kya kar sakta hai — aap ise kabhi bhi badal sakte hain.",
     get_started: "Shuru kijiye", act_absent: "Dikh nahi rahe", act_upright_still: "Seedhe", act_moving: "Hil rahe hain", act_lying: "Lete hue",
-    events: "events", inactivity: "Inactivity check (minute baad)", saved: "Save ho gaya",
+    events: "events", inactivity: "Inactivity check (minute baad)", safety_policy: "Safety policy", none_configured: "configure nahi", memories_empty: "Abhi kuch yaad nahi rakha gaya.",
+    saved: "Save ho gaya",
   },
   es: {
     tab_care: "Cuidado", tab_timeline: "Historial", tab_privacy: "Privacidad", tab_emergency: "Emergencias", tab_system: "Sistema",
@@ -108,7 +111,8 @@ export const UI = {
     preferred_lang: "Idioma", auto: "Automático", user_name: "Tu nombre (para alertas)", require_wake: "Requerir la palabra “Baymax”",
     llm: "Modelo conversacional", onboarding_title: "Bienvenido a Baymax", onboarding_body: "Baymax funciona en este ordenador. Elige lo que puede hacer; puedes cambiarlo cuando quieras.",
     get_started: "Empezar", act_absent: "Fuera de la vista", act_upright_still: "De pie o sentado", act_moving: "En movimiento", act_lying: "Acostado",
-    events: "eventos", inactivity: "Comprobar inactividad tras (min)", saved: "Guardado",
+    events: "eventos", inactivity: "Comprobar inactividad tras (min)", safety_policy: "Política de seguridad", none_configured: "sin configurar", memories_empty: "Aún no hay nada recordado.",
+    saved: "Guardado",
   },
   fr: {
     tab_care: "Soins", tab_timeline: "Historique", tab_privacy: "Confidentialité", tab_emergency: "Urgences", tab_system: "Système",
@@ -135,7 +139,8 @@ export const UI = {
     preferred_lang: "Langue", auto: "Automatique", user_name: "Votre nom (pour les alertes)", require_wake: "Exiger le mot « Baymax »",
     llm: "Modèle conversationnel", onboarding_title: "Bienvenue dans Baymax", onboarding_body: "Baymax fonctionne sur cet ordinateur. Choisissez ce qu'il peut faire — modifiable à tout moment.",
     get_started: "Commencer", act_absent: "Hors champ", act_upright_still: "Debout ou assis", act_moving: "En mouvement", act_lying: "Allongé",
-    events: "événements", inactivity: "Vérifier l'inactivité après (min)", saved: "Enregistré",
+    events: "événements", inactivity: "Vérifier l'inactivité après (min)", safety_policy: "Politique de sécurité", none_configured: "non configuré", memories_empty: "Rien de mémorisé pour l’instant.",
+    saved: "Enregistré",
   },
   de: {
     tab_care: "Pflege", tab_timeline: "Verlauf", tab_privacy: "Datenschutz", tab_emergency: "Notfall-Einrichtung", tab_system: "System",
@@ -162,7 +167,8 @@ export const UI = {
     preferred_lang: "Sprache", auto: "Automatisch", user_name: "Dein Name (für Alarme)", require_wake: "Aktivierungswort „Baymax“ verlangen",
     llm: "Gesprächsmodell", onboarding_title: "Willkommen bei Baymax", onboarding_body: "Baymax läuft auf diesem Computer. Wähle, was es darf — du kannst das jederzeit ändern.",
     get_started: "Starten", act_absent: "Nicht im Bild", act_upright_still: "Aufrecht", act_moving: "In Bewegung", act_lying: "Liegend",
-    events: "Ereignisse", inactivity: "Inaktivitätsprüfung nach (Min.)", saved: "Gespeichert",
+    events: "Ereignisse", inactivity: "Inaktivitätsprüfung nach (Min.)", safety_policy: "Sicherheitsrichtlinie", none_configured: "nicht konfiguriert", memories_empty: "Noch nichts gemerkt.",
+    saved: "Gespeichert",
   },
 };
 
