@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BAYMAX OS</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='6' y='12' width='52' height='40' rx='20' fill='%23fff' stroke='%23c9d1dc' stroke-width='3'/%3E%3Cellipse cx='23' cy='32' rx='4' ry='5' fill='%231d2230'/%3E%3Cellipse cx='41' cy='32' rx='4' ry='5' fill='%231d2230'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <svg viewBox="0 0 64 44" class="brand-mark" aria-hidden="true"><rect x="2" y="2" width="60" height="40" rx="20"/><ellipse cx="22" cy="22" rx="4" ry="5"/><ellipse cx="42" cy="22" rx="4" ry="5"/></svg>
+    <span class="brand-name">BAYMAX <b>OS</b></span>
+  </div>
+  <div id="statePill" class="state-pill" data-state="monitoring"><span class="dot"></span><span id="stateText">Monitoring</span></div>
+  <nav class="tabs" id="tabs">
+    <button data-tab="care" class="active" data-i18n="tab_care">Care</button>
+    <button data-tab="timeline" data-i18n="tab_timeline">Timeline</button>
+    <button data-tab="privacy" data-i18n="tab_privacy">Privacy</button>
+    <button data-tab="emergency" data-i18n="tab_emergency">Emergency setup</button>
+    <button data-tab="system" data-i18n="tab_system">System</button>
+  </nav>
+  <div class="top-controls">
+    <select id="langSelect" aria-label="Language"></select>
+    <button id="micBtn" class="icon-btn" title="Microphone" aria-pressed="false">
+      <svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12h-2Z"/></svg>
+    </button>
+    <button id="camBtn" class="icon-btn" title="Camera" aria-pressed="false">
+      <svg viewBox="0 0 24 24"><path d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11l-4 4Z"/></svg>
+    </button>
+    <button id="pauseBtn" class="pill-btn" data-i18n="privacy_pause">Pause sensors</button>
+  </div>
+</header>
+
+<main>
+  <!-- CARE --------------------------------------------------------------->
+  <section id="tab-care" class="tab-panel active">
+    <div class="care-grid">
+      <div class="card companion">
+        <div class="face-wrap" id="faceWrap" data-mood="idle">
+          <svg id="face" viewBox="0 0 320 220" aria-label="Baymax">
+            <defs>
+              <radialGradient id="skin" cx="45%" cy="35%" r="75%">
+                <stop offset="0%" stop-color="#ffffff"/><stop offset="70%" stop-color="#f3f6fa"/><stop offset="100%" stop-color="#dfe5ee"/>
+              </radialGradient>
+            </defs>
+            <ellipse class="ring" cx="160" cy="112" rx="152" ry="104"/>
+            <ellipse class="head" cx="160" cy="112" rx="138" ry="92" fill="url(#skin)"/>
+            <g class="eyes">
+              <ellipse class="eye l" cx="112" cy="110" rx="13" ry="16"/>
+              <ellipse class="eye r" cx="208" cy="110" rx="13" ry="16"/>
+            </g>
+          </svg>
+          <div class="voice-bars" id="voiceBars"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="caption" id="caption"></div>
+        <div class="hint" id="wakeHint" data-i18n="wake_hint"></div>
+        <form id="textForm" class="text-form" autocomplete="off">
+          <input id="textInput" data-i18n-ph="type_placeholder" maxlength="500">
+          <button type="submit" class="primary" data-i18n="send">Send</button>
+        </form>
+        <div class="quick">
+          <button class="big ok" id="qOk" data-i18n="im_ok">I'm okay</button>
+          <button class="big danger" id="qHelp" data-i18n="need_help">I need help</button>
+        </div>
+      </div>
+
+      <div class="card convo">
+        <div class="convo-list" id="convo"></div>
+      </div>
+
+      <div class="card sensors">
+        <div class="card-title"><span data-i18n="sensors">Sensors</span><span class="mode-badge" id="modeBadge"></span></div>
+        <div class="video-box" id="videoBox">
+          <video id="video" playsinline muted></video>
+          <canvas id="overlay"></canvas>
+          <div class="video-off" id="videoOff" data-i18n="no_camera">Camera off</div>
+        </div>
+        <label class="switch-row small"><input type="checkbox" id="showVideo" checked><span data-i18n="show_video">Show video</span></label>
+        <p class="fineprint" data-i18n="frames_local"></p>
+        <dl class="readouts">
+          <div><dt data-i18n="activity">Activity</dt><dd id="rActivity">—</dd></div>
+          <div><dt data-i18n="fall_conf">Last fall check</dt><dd id="rFall">—</dd></div>
+          <div><dt data-i18n="visibility">Visibility</dt><dd id="rVis">—</dd></div>
+          <div><dt data-i18n="persons">People</dt><dd id="rPersons">—</dd></div>
+        </dl>
+        <div class="meter"><span data-i18n="audio">Sound level</span><div class="bar"><i id="audioBar"></i></div></div>
+        <div class="stt-row"><span data-i18n="stt_mode">Speech recognition</span><select id="sttMode"></select></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE ----------------------------------------------------------->
+  <section id="tab-timeline" class="tab-panel">
+    <div class="card">
+      <div class="timeline-head">
+        <div class="filters" id="tlFilters"></div>
+        <div class="charts" id="tlCharts"></div>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <!-- PRIVACY ------------------------------------------------------------>
+  <section id="tab-privacy" class="tab-panel">
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title" data-i18n="consent_title">What Baymax may do</div>
+        <div id="consentList" class="consent-list"></div>
+      </div>
+      <div class="card">
+        <div class="card-title" data-i18n="memories">Remembered facts</div>
+        <ul id="memoryList" class="memory-list"></ul>
+        <div class="card-title spaced" data-i18n="preferred_lang">Language</div>
+        <div class="form-grid">
+          <label><span data-i18n="preferred_lang"></span><select id="prefLang"></select></label>
+          <label class="switch-row"><input type="checkbox" id="requireWake"><span data-i18n="require_wake"></span></label>
+          <label class="switch-row"><input type="checkbox" id="llmEnabled"><span data-i18n="llm"></span><em id="llmInfo"></em></label>
+        </div>
+        <div class="danger-zone">
+          <a class="pill-btn" href="/api/export" data-i18n="export">Export my data</a>
+          <button class="pill-btn danger" id="deleteAllBtn" data-i18n="delete_all">Delete all my data</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMERGENCY ---------------------------------------------------------->
+  <section id="tab-emergency" class="tab-panel">
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title" data-i18n="contacts">Emergency contacts</div>
+        <div id="contactList" class="contact-list"></div>
+        <button class="pill-btn" id="addContact" data-i18n="add_contact">Add contact</button>
+        <div class="form-grid spaced">
+          <label><span data-i18n="user_name"></span><input id="userName" maxlength="60"></label>
+          <label><span data-i18n="emergency_number"></span><input id="emNumber" maxlength="16"></label>
+          <label class="switch-row"><input type="checkbox" id="dryRun"><span data-i18n="dry_run"></span></label>
+        </div>
+        <div class="row-actions">
+          <button class="primary" id="saveEsc" data-i18n="save">Save</button>
+          <button class="pill-btn" id="testEsc" data-i18n="send_test">Send test alert</button>
+          <span class="status-text" id="escStatus"></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Safety policy</div>
+        <div class="form-grid">
+          <label><span data-i18n="checkin_timeout"></span><input type="number" id="pCheckin" min="10" max="300"></label>
+          <label><span data-i18n="countdown"></span><input type="number" id="pCountdown" min="5" max="120"></label>
+          <label><span data-i18n="fall_countdown"></span><input type="number" id="pFallCountdown" min="5" max="180"></label>
+          <label><span data-i18n="high_pain"></span><input type="number" id="pHighPain" min="1" max="10"></label>
+          <label><span data-i18n="inactivity"></span><input type="number" id="pInactivity" min="1" max="240" step="1"></label>
+        </div>
+        <div class="row-actions"><button class="primary" id="savePolicy" data-i18n="save">Save</button><span class="status-text" id="policyStatus"></span></div>
+        <p class="fineprint">Webhook contacts receive <code>POST {"source":"baymax","text":…}</code> — works with ntfy.sh, Home Assistant, or any SMS/Telegram bridge. E-mail uses <code>BAYMAX_SMTP_*</code> environment variables.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEM ------------------------------------------------------------->
+  <section id="tab-system" class="tab-panel">
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title" data-i18n="eval">Latest evaluation</div>
+        <div id="evalBox"></div>
+        <div class="card-title spaced" data-i18n="models">Models</div>
+        <div id="modelList" class="model-list"></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span data-i18n="audit">Audit log</span><button class="pill-btn" id="verifyAudit" data-i18n="verify_audit">Verify integrity</button></div>
+        <div id="auditStatus" class="status-text"></div>
+        <table class="audit"><tbody id="auditRows"></tbody></table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Safety overlay -->
+<div id="safetyOverlay" class="safety-overlay" hidden>
+  <div class="safety-card">
+    <div class="countdown" id="countdown">
+      <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="track"/><circle cx="60" cy="60" r="52" class="prog" id="cdProg"/></svg>
+      <span id="cdNum"></span>
+    </div>
+    <h2 id="ovTitle"></h2>
+    <p id="ovText"></p>
+    <div class="ov-number" id="ovNumber"></div>
+    <div class="ov-actions">
+      <button class="big ok" id="ovOk"></button>
+      <button class="big danger" id="ovHelp"></button>
+    </div>
+    <div class="ov-test" id="ovTest"></div>
+  </div>
+</div>
+
+<!-- Provenance drawer -->
+<aside id="drawer" class="drawer" hidden>
+  <button class="close" id="drawerClose" aria-label="Close">×</button>
+  <div id="drawerBody"></div>
+</aside>
+
+<!-- Onboarding -->
+<div id="onboarding" class="modal" hidden>
+  <div class="modal-card">
+    <h2 data-i18n="onboarding_title"></h2>
+    <p data-i18n="onboarding_body"></p>
+    <label><span data-i18n="preferred_lang"></span><select id="obLang"></select></label>
+    <div id="obConsents" class="consent-list compact"></div>
+    <button class="primary big" id="obStart" data-i18n="get_started"></button>
+  </div>
+</div>
+
+<script type="module" src="/static/app.js"></script>
+</body>
+</html>
