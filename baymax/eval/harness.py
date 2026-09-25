@@ -133,6 +133,15 @@ def _allowed_numbers(eng: Engine, user_texts: list[str], stmt_ref: Optional[str]
     return allowed
 
 
+def _template_numbers(text: str, lang: str) -> set[str]:
+    """Numbers that are constants of the phrase template this sentence was rendered from."""
+    out: set[str] = set()
+    for key in ph.P:
+        if _template_regex(key, lang).match(text):
+            out |= set(_NUM.findall(ph.P[key][lang]))
+    return out
+
+
 def check_invariants(eng: Engine, trace, user_texts: list[str]) -> list[str]:
     v: list[str] = []
     resp = trace.response
@@ -160,7 +169,7 @@ def check_invariants(eng: Engine, trace, user_texts: list[str]) -> list[str]:
             # user-data / inference phrases: find which template matches in the response language
             if not any(_template_regex(k, lang).match(s.text) for k in ph.P):
                 v.append(f"stmt{i}: {s.provenance.value} statement not rendered from the {lang} phrase table")
-        allowed = _allowed_numbers(eng, user_texts, s.ref, lang)
+        allowed = _allowed_numbers(eng, user_texts, s.ref, lang) | _template_numbers(s.text, lang)
         for n in _NUM.findall(s.text):
             if n not in allowed and n.replace(",", ".") not in allowed:
                 v.append(f"stmt{i}: ungrounded number {n}")

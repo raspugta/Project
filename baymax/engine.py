@@ -262,21 +262,21 @@ class Engine:
             score = nlu.pain_score
             sev = Severity.HIGH if (score or 0) >= 8 else Severity.MODERATE if (score is None or score >= 5) else Severity.LOW
             regions = list(dict.fromkeys([c.body_region.value for c in pain if c.body_region] + [b.value for b in nlu.body_regions]))
-            evs.append(HealthEvent(kind=EventKind.PAIN, severity=sev, concepts=[c.concept.value for c in pain] or ["pain"],
+            evs.append(HealthEvent(ts=self.clock(), kind=EventKind.PAIN, severity=sev, concepts=[c.concept.value for c in pain] or ["pain"],
                                    body_regions=regions, pain_score=score,
                                    summary=f"pain{f' {score}/10' if score is not None else ''}{' ' + ','.join(regions) if regions else ''}",
                                    **common))
         other = [c for c in affirmed if c.concept not in (Concept.PAIN, Concept.HEADACHE, Concept.SORE_THROAT, Concept.FALL)
                  and c.concept not in RED_FLAG_CONCEPTS and not c.past]
         if other:
-            evs.append(HealthEvent(kind=EventKind.SYMPTOM, severity=Severity.LOW, concepts=[c.concept.value for c in other],
+            evs.append(HealthEvent(ts=self.clock(), kind=EventKind.SYMPTOM, severity=Severity.LOW, concepts=[c.concept.value for c in other],
                                    body_regions=[c.body_region.value for c in other if c.body_region],
                                    summary="symptoms: " + ",".join(c.concept.value for c in other), **common))
         for m in nlu.measurements:
-            evs.append(HealthEvent(kind=EventKind.MEASUREMENT, severity=Severity.INFO, measurement=m,
+            evs.append(HealthEvent(ts=self.clock(), kind=EventKind.MEASUREMENT, severity=Severity.INFO, measurement=m,
                                    summary=f"{m.type.value} {fmt_measurement(m)} (user reported: '{m.raw}')", **common))
         if nlu.intent == Intent.MEDICATION_LOG and nlu.medication:
-            evs.append(HealthEvent(kind=EventKind.MEDICATION_TAKEN, severity=Severity.INFO, medication=nlu.medication,
+            evs.append(HealthEvent(ts=self.clock(), kind=EventKind.MEDICATION_TAKEN, severity=Severity.INFO, medication=nlu.medication,
                                    summary=f"took {nlu.medication}", **common))
         return evs
 
@@ -326,7 +326,7 @@ class Engine:
                                   {"results": [r.model_dump() for r in res.results]})
         self.store.audit("safety", "escalation_dispatched", escalation_id=res.id, level=level, reason=reason,
                          status=res.status, channels=[{"contact": r.contact_id, "ok": r.ok} for r in res.results])
-        ev = HealthEvent(kind=EventKind.ESCALATION, severity=Severity.CRITICAL if level == "emergency" else Severity.HIGH,
+        ev = HealthEvent(ts=self.clock(), kind=EventKind.ESCALATION, severity=Severity.CRITICAL if level == "emergency" else Severity.HIGH,
                          summary=f"alert {level}: {res.status}", provenance=Provenance.SYSTEM, source_ref=res.id, lang=lang)
         self.store.add_event(ev, emergency=True)
         if trace is not None:
@@ -346,7 +346,7 @@ class Engine:
         prov = {"perception": Provenance.MODEL, "nlu": Provenance.USER, "ui": Provenance.USER}.get(inp.source, Provenance.SYSTEM)
         obs = self.observations.get(inp.ref_id or "") if inp.source == "perception" else None
         model_id = obs.model_id if obs else (self.nlu.model_id if inp.source == "nlu" else None)
-        ev = HealthEvent(kind=kind, severity=sev, concepts=[str(c) for c in p.get("concepts", [])],
+        ev = HealthEvent(ts=self.clock(), kind=kind, severity=sev, concepts=[str(c) for c in p.get("concepts", [])],
                          summary=f"{kind.value}: " + ", ".join(f"{k}={v}" for k, v in p.items() if k != "concepts"),
                          provenance=prov, source_ref=inp.ref_id, model_id=model_id,
                          confidence=inp.confidence if prov != Provenance.SYSTEM else None, lang=lang)
@@ -605,7 +605,7 @@ class Engine:
                         and self.machine.ctx.state == SafetyState.MONITORING):
                     lang = self._lang_for_system_turn()
                     st = compose.phrase("posture_tip", lang, ref=f"obs:{ev.id}", model_id=ev.model_id, confidence=ev.confidence)
-                    he = HealthEvent(kind=EventKind.POSTURE_ALERT, severity=Severity.LOW, concepts=["posture"],
+                    he = HealthEvent(ts=self.clock(), kind=EventKind.POSTURE_ALERT, severity=Severity.LOW, concepts=["posture"],
                                      provenance=Provenance.MODEL, source_ref=ev.id, model_id=ev.model_id,
                                      confidence=ev.confidence, summary="posture reminder", lang=lang)
                     self.store.add_event(he)
